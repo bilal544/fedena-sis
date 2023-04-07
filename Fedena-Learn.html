@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title=========================================== -->
+    <title>School Management Software</title>
+    <link rel="icon" href="./Assets/Images/facebook.png" type="image/x-icon" />
+    <!-- Bootstrap css files ============================================-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- bootstrap icons + fontawesome + google icons======================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script src="https://kit.fontawesome.com/c7dabd0806.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <!----------------owl-carousel-files==========================================-->
+    <link rel="stylesheet" href="./Assets/animation css/animate.css" />
+    <link rel="stylesheet" href="./Assets/animation css/owl.carousel.css" />
+    <link rel="stylesheet" href="./Assets/animation css/owl.theme.green.css" />
+    <!-- Own styling linking===================================== -->
+    <link rel="stylesheet" href="./Assets/Css/style.css" />
+    <!----------own scrolll animation css cdn========================================-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!--------on scroll javascript animation cdn============================-->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body onload="myfunction()">
+    <!------preloader===========================================-->
+  <div id="loading"></div>
+    <!-- header for navbar=====================================  -->
+    <header>
+      <nav class="navbar navbar-expand-lg shadow sticky-top bg-white">
+        <div class="container">
+          <a class="navbar-brand " href="Index.html">
+            <img
+              src="./Assets/Images/logo.webp"
+              alt=""
+              style="resize: none; width: 78px"
+            />
+          </a>
+          <button
+            class="navbar-toggler "
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Product
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Feature-Tour.html" target="_blank">Feature Tour</a></li>
+                  <li><a class="dropdown-item" href="Fedena-Learn.html">Fedena Learn</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Mibile App</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Multi School</a></li>
+                  <li><a class="dropdown-item" href="Student-information-system.html">Student Information System</a></li>
+                  <li><a class="dropdown-item" href="#">Custom ERP</a></li>
+                  <li><a class="dropdown-item" href="#">Integration</a></li>
+                  <li><a class="dropdown-item" href="#">101 Reasons</a></li>
+                  <li><a class="dropdown-item" href="#">Fedena Difference</a></li>
+                  <li><a class="dropdown-item" href="#">FAQ</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Partner
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Why Partner?</a></li>
+                  <li><a class="dropdown-item" href="#"> OEM Partner </a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Resources
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Case Studies</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Ebook </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Our Story</a></li>
+                  <li><a class="dropdown-item" href="#">Core Team</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Our Customers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Media and Press</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Awards and Recognitions</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Company Careers</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <!-- btn section===========-->
+              <div class="btn-section ms-lg-3 ms-0">
+                <button type="button" class="bg-white border1 rounded-1">
+                  <a href="#" class="text-decoration-none"> Try For Free </a>
+                </button>
+                <!-- btn-2====================== -->
+                <button type="button" class="border2 rounded-1 mt-lg-0 mt-2">
+                  <a href="#" class="text-decoration-none">
+                    Request Live Demo
+                  </a>
+                </button>
+              </div>
+              <!----=========================phone icon=====================================-->
+              <div
+                class="phone-icon ms-2 d-lg-block d-none"
+              >
+                <a href="#" class="text-dark">
+                  <img src="./Assets/Images/call-icon.png" alt="" style="height: 40px;" title="+91-8047-0918-07">
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--------------------------------main banner================================================================-->
+      <div class="main-banner postion-area-1 pb-lg-5 pb-0" >
+        <div class="container pt-5 pb-5">
+          <div class="row justify-content-evenly align-items-center">
+            <div class="col-lg-6 col-md-8 text-lg-start text-center">
+              <!-- bg-red-for-all-in-one -->
+              <div
+                class="bg-red-for-all-in-one col-lg-4 col-md-4 col-5 rounded-2 text-center mx-lg-0 mx-auto"
+              >
+                <h4 class="fw-bold">Fedena Learn</h4>
+              </div>
+              <br />
+              <!-- headings============================ -->
+              <strong class="fw-bolder h1 banner-heading">
+                An integrated solution for e-learning & administration in your institution
+              </strong>
+              <!----para ============================-->
+              <p class="mt-3 h5 para-area-1 text-muted">
+                An online learning platform for 
+                schools and colleges built into 
+                your favorite Fedena ERP.
+                Digitize the entire operations from admissions to e-learning
+              </p>
+              <!-- btn section===========-->
+              <div class="btn-section mt-4">
+                <button type="button" class="bg-white border-1 rounded-1" style="padding: 10px 40px;">
+                  <a href="#" class="text-decoration-none h5"> Try It Free </a>
+                </button>
+                <!-- btn-2====================== -->
+                <button
+                  type="button"
+                  class="border-2 rounded-1 ms-0 ms-lg-3 mt-lg-0 mt-2"
+                  style="padding: 12px 40px;"
+                  >
+                  <a href="#" class="text-decoration-none h5">
+                   Request Demo
+                  </a>
+                </button>
+              </div>
+            </div>
+            <!-----right alignment of images===============================================-->
+            <div class="col-lg-6 mt-lg-0 mt-5">
+              <div class="images-area">
+                <figure>
+                  <img
+                    src="./Assets/Images/fedena-learn.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+     <!----why fedena learn section on=====================================================-->
+     <div class="container position-absolute-1 pt-4 pt-lg-0">
+        <div class="row justify-content-between align-items-center">
+            <p class="h2 fw-bold d-lg-none d-block mt-5 text-center mb-5">
+                What is Fedena Learn?
+              </p>
+           <div class="col-lg-6 text-center">
+               <figure>
+                  <img src="./Assets/Images/why-learn-fedena.png" alt="" class="img-fluid">
+               </figure>
+           </div>
+           <!--------why learn fedena===============================================-->
+           <div class="col-lg-6 text-center text-lg-start mt-lg-0 mt-4">
+              <p class="h2 fw-bold d-lg-block d-none">
+                What is Fedena Learn?
+              </p>
+              <p class="text-dark text-center text-lg-start" style="line-height: 1.5; font-size: 18px;">
+                Fedena Learn is a combination of ERP & online 
+                learning platform for schools and colleges, 
+                which allows teachers to deliver media-rich 
+                customized courses, promote an interactive 
+                learning environment beyond classroom boundaries 
+                and provide better operations 
+                controls for admin from a single platform.
+                <br>
+                <br>
+                Fedena Learn
+                powered by Uzity, our LMS simply enables Fedena 
+                powered institutions to manage online 
+                learning and daily academic and 
+                administrative activities from a single platform.
+              </p>
+           </div>
+        </div>
+     </div>
+    </header>
+    <!----------back to top button===================================================-->
+    <button
+    type="button"
+    class="btn btn-floating btn-sm"
+    id="btn-back-to-top" title="Back To Top" onclick="topFunction()">
+    <i class="fas fa-angle-up text-white"></i>
+  </button>
+  <!------------------phone icon on scroll btn====================================================-->
+  <button type="button"
+  class="btn btn-floating btn-sm border"
+  id="phone-icon" title="+91-8047-0918-07">
+   <i class="fas fa-phone text-white"></i>
+  </button>
+   <!------------------email icon on scroll btn =============================================-->
+   <button type="button"
+   class="btn btn-floating btn-primary btn-sm border"
+   id="email-icon" title="Email Us">
+    <i class="bi bi-envelope-open text-white"></i>
+   </button>
+   <!-----------------online learning modules in fedena learn=========================================================-->
+   <main class="online-learning-modules my-lg-0 my-5">
+    <section>
+         <div class="container">
+            <p class="text-lg-start text-center display-5 fw-bold" style="color: #777777;">
+                Online Learning Modules in Fedena Learn
+            </p>
+            <p class="h5 text-lg-start text-center">
+                Transform your institute’s traditional academic experience into digital learning within a few clicks
+            </p>
+         </div>
+         <div class="container my-5">
+         <!---- create engaging courses==========================================-->
+           <div class="row justify-content-between align-items-center">
+            <div class="col-md-8 text-lg-start text-center">
+              <p class="h2 fw-bold ">
+                Create Engaging Courses
+              </p>
+              <!-- displayimage-on-small-screen -->
+              <div class="d-lg-none d-block">
+                <figure>
+                  <img src="./Assets/Images/fedena-learn-mobile.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+              <!------------captions-ong lg- scren=======================-->
+              <div class="col-lg-7">
+              <p class="h5 text-muted d-lg-block d-none mt-5">
+                Instructors can create end-to-end customized and engaging 
+                courses by adding teaching materials using their 
+                favorite mediums such as videos, audio, images, text, presentations, and documents.
+              </p>
+            </div>
+            </div>
+            <!------------right-alignment-1============================-->
+            <div class="col-md-4 text-lg-start text-center">
+              <!----diplay image 0n small screen==========================-->
+              <figure class="d-lg-block d-none">
+                <img src="./Assets/Images/fedena-learn-mobile.png" alt="" class="img-fluid">
+              </figure>
+              <!------------captions-ong small- scren=======================-->
+                <p class="h5 text-muted d-lg-none d-block mt-2">
+                  Instructors can create end-to-end customized and engaging 
+                  courses by adding teaching materials using their 
+                  favorite mediums such as videos, audio, images, text, presentations, and documents.
+                </p>
+            </div>
+           </div>
+           <!----------------2nd stream recorded lectures================================-->
+           <div class="row justify-content-between align-items-center mt-lg-0 mt-4">
+            <div class="col-md-4 text-center d-block">
+              <p class="h2 fw-bold d-lg-none">
+                Stream Recorded Lectures
+              </p>
+              <!-- displayimage-on-small-screen -->
+              <div class="mt-4">
+                <figure>
+                  <img src="./Assets/Images/fedena-learn-mobile-2.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+            </div>
+            <!------------right-alignment-1============================-->
+            <div class="col-md-4 text-lg-start text-center">
+              <p class="h2 fw-bold d-lg-block d-none mb-5">
+                Stream Recorded Lectures
+              </p>
+              <!------------captions-ong small- scren=======================-->
+                <p class="h5 text-muted mt-2 ">
+                  Teachers can record the lectures and 
+                  share them with the students. 
+                  Students get notified about the 
+                  updates and can watch the recorded lectures at their own convenience.
+                </p>
+            </div>
+           </div>
+            <!----3rd single sign On==========================================-->
+            <div class="row justify-content-between align-items-center mt-lg-0 mt-4">
+              <div class="col-md-8 text-lg-start text-center">
+                <p class="h2 fw-bold ">
+                  Single Sign-On
+                </p>
+                <!-- displayimage-on-small-screen -->
+                <div class="d-lg-none d-block">
+                  <figure>
+                    <img src="./Assets/Images/fedena-learn-mobile-3.png" alt="" class="img-fluid">
+                  </figure>
+                </div>
+                <!------------captions-ong lg- scren=======================-->
+                <div class="col-lg-7">
+                <p class="h5 text-muted d-lg-block d-none mt-5">
+                  From the Fedena account, users can gain accessibility 
+                  to Uzity platform seamlessly. It gives 
+                  users secure, centralized, 
+                  and one-click access to Fedena Learn and Uzity platform.
+                </p>
+              </div>
+              </div>
+              <!------------right-alignment-1============================-->
+              <div class="col-md-4 text-lg-start text-center">
+                <!----diplay image 0n small screen==========================-->
+                <figure class="d-lg-block d-none">
+                  <img src="./Assets/Images/fedena-learn-mobile-3.png" alt="" class="img-fluid">
+                </figure>
+                <!------------captions-ong small- scren=======================-->
+                  <p class="h5 text-muted d-lg-none d-block mt-2">
+                    From the Fedena account, users can gain accessibility 
+                    to Uzity platform seamlessly. It gives 
+                    users secure, centralized, 
+                    and one-click access to Fedena Learn and Uzity platform.
+                  </p>
+              </div>
+             </div>
+             <!----------------4th Mobile Learning================================-->
+           <div class="row justify-content-between align-items-center mt-lg-0 mt-4">
+            <div class="col-md-6 text-center d-block">
+              <p class="h2 fw-bold d-lg-none">
+                Mobile Learning
+              </p>
+              <!-- displayimage-on-small-screen -->
+              <div class="mt-4">
+                <figure>
+                  <img src="./Assets/Images/fedena-learn-mobile-4.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+            </div>
+            <!------------right-alignment-1============================-->
+            <div class="col-md-5">
+              <p class="h2 fw-bold d-lg-block d-none mb-5 text-lg-start text-center">
+                Mobile Learning
+              </p>
+              <!------------captions-ong small- scren=======================-->
+                <p class="h5 text-dark mt-2 text-lg-start text-center">
+                  Access all essential features on the go. 
+                  With the integrated solution, users don’t 
+                  have to use a separate app to manage online 
+                  learning & teaching. Using Fedena mobile 
+                  app users can access online learning features, such as:
+                </p>
+                <!----------list making area================================-->
+                <ul class="list-unstyled mt-4">
+                  <li>
+                    <p class="text-muted d-flex align-items-center">
+                      <i class="bi bi-check border-0 rounded-circle bg-success text-white" style="font-size: 17px; height: 20px;"></i>
+                      <span class="ms-lg-2 ms-2">
+                        Students can download content within the app
+                      </span>
+                    </p>
+                  </li>
+                  <!-- 2nd -->
+                  <li>
+                    <p class="text-muted d-flex align-items-center">
+                      <i class="bi bi-check border-0 rounded-circle bg-success text-white" style="font-size: 17px; height: 20px;"></i>
+                      <span class="ms-lg-2 ms-2">
+                        Watch recorded lectures in offline mode.
+                      </span>
+                    </p>
+                  </li>
+                  <!-- 3rd -->
+                  <li>
+                    <p class="text-muted d-flex align-items-center">
+                      <i class="bi bi-check border-0 rounded-circle bg-success text-white" style="font-size: 17px; height: 20px;"></i>
+                      <span class="ms-lg-2 ms-2">
+                        Track the course progress.
+                      </span>
+                    </p>
+                  </li>
+                  <!-- 4th -->
+                  <li>
+                    <p class="text-muted d-flex justify-content-between align-items-center">
+                      <i class="bi bi-check border-0 rounded-circle bg-success text-white" style="font-size: 20px; height: 25px;"></i>
+                      <span class="ms-lg-2 ms-2">
+                        Students can ask any question regarding 
+                        any course and share it with instructors and classmates.
+                      </span>
+                    </p>
+                  </li>
+                  <!-- 5th -->
+                  <li>
+                    <p class="text-muted d-flex justify-content-between align-items-center">
+                      <i class="bi bi-check border-0 rounded-circle bg-success text-white" style="font-size: 20px; height: 25px;"></i>
+                      <span class="ms-2">
+                        Add MCQ and descriptive quiz in the course 
+                        and assess the student’s progress through the course.
+                      </span>
+                    </p>
+                  </li>
+                </ul>
+                <!-- btn-request demo====================== -->
+                <button
+                  type="button"
+                  class="border-2 rounded-1  mt-lg-2 mt-2"
+                  style="padding: 12px 40px;"
+                  >
+                  <a href="#" class="mx-lg-0 mx-auto text-decoration-none h5">
+                   Request Demo
+                  </a>
+                </button>
+            </div>
+           </div>
+           <!---- Data Syncronization==========================================-->
+           <div class="row justify-content-between align-items-center mt-5">
+            <div class="col-md-6 text-lg-start text-center">
+              <p class="h2 fw-bold ">
+                Data Syncronization
+              </p>
+              <!-- displayimage-on-small-screen -->
+              <div class="d-lg-none d-block mt-4">
+                <figure>
+                  <img src="./Assets/Images/configure-sync-data.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+              <!------------captions-ong lg- scren=======================-->
+              <div class="col-lg-10">
+              <p class="h5 text-muted d-lg-block d-none mt-5">
+                Data Sync mechanism transfers the data 
+                from Fedena to Uzity and vice-versa. Initial 
+                user data and basic configuration setup can 
+                be done in Fedena. Once the setup is done, 
+                users can sync the data to the linked Uzity account.
+              </p>
+            </div>
+            </div>
+            <!------------right-alignment-1============================-->
+            <div class="col-md-6 text-lg-start text-center">
+              <!----diplay image 0n small screen==========================-->
+              <figure class="d-lg-block d-none">
+                <img src="./Assets/Images/configure-sync-data.png" alt="" class="img-fluid">
+              </figure>
+              <!------------captions-ong small- scren=======================-->
+                <p class="h5 text-muted d-lg-none d-block mt-2">
+                  Data Sync mechanism transfers the data 
+                from Fedena to Uzity and vice-versa. Initial 
+                user data and basic configuration setup can 
+                be done in Fedena. Once the setup is done, 
+                users can sync the data to the linked Uzity account.
+                </p>
+            </div>
+           </div>
+            <!----------------auto enrollment================================-->
+            <div class="row justify-content-between align-items-center mt-lg-0 mt-4">
+              <div class="col-md-5 text-center d-block">
+                <p class="h2 fw-bold d-lg-none">
+                 Auto Enrollment
+                </p>
+                <!-- displayimage-on-small-screen -->
+                <div class="mt-4">
+                  <figure>
+                    <img src="./Assets/Images/auto-enrollment.png" alt="" class="img-fluid">
+                  </figure>
+                </div>
+              </div>
+              <!------------right-alignment-1============================-->
+              <div class="col-md-5 text-lg-start text-center">
+                <p class="h2 fw-bold d-lg-block d-none mb-5">
+                  Auto Enrollment:
+                </p>
+                <!------------captions-ong small- scren=======================-->
+                  <p class="h5 text-muted mt-2">
+                    Fedena Learn auto-enroll functionality,
+                    allows institutes to automatically enroll a large number 
+                    of students in the course using a set of available rules. 
+                    As long as students meet the rules’ criteria, 
+                    they get automatically enrolled into the new courses. 
+                    This will reduce the burden to manually assign users to courses. 
+                    Also, it’ll mitigate the errors associated with assigning the course.
+                  </p>
+              </div>
+             </div>
+             <!---- Enhance Collaboration==========================================-->
+           <div class="row justify-content-between align-items-center mt-5">
+            <div class="col-md-6 text-lg-start text-center">
+              <p class="h2 fw-bold ">
+                Enhance Collaboration
+              </p>
+              <!-- displayimage-on-small-screen -->
+              <div class="d-lg-none d-block mt-4">
+                <figure>
+                  <img src="./Assets/Images/discussions.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+              <!------------captions-ong lg- scren=======================-->
+              <div class="col-lg-10">
+              <p class="h5 text-muted d-lg-block d-none mt-5">
+                Instead of simply offering a one-way broadcast, 
+                Fedena Learn encourages collaboration by allowing instructors to communicate 
+                with learners in real-time and vice versa. 
+                Additionally, students can share 
+                their ideas, ask questions and interact with their classmates.
+              </p>
+            </div>
+            </div>
+            <!------------right-alignment-1============================-->
+            <div class="col-md-6 col-lg-4 text-lg-start text-center">
+              <!----diplay image 0n small screen==========================-->
+              <figure class="d-lg-block d-none">
+                <img src="./Assets/Images/discussions.png" alt="" class="img-fluid">
+              </figure>
+              <!------------captions-ong small- scren=======================-->
+                <p class="h5 text-muted d-lg-none d-block mt-2">
+                  Instead of simply offering a one-way broadcast, 
+                Fedena Learn encourages collaboration by allowing instructors to communicate 
+                with learners in real-time and vice versa. 
+                Additionally, students can share 
+                their ideas, ask questions and interact with their classmates.
+                </p>
+            </div>
+           </div>
+        </div>
+    </section>
+   </main>
+   <!------------------------------banner # 4 simple, Fast Setup=======================================================-->
+   <main class="my-5 bg-light" style="padding: 25px 0px;">
+    <section>
+        <div class="container">
+          <div class="text-lg-start text-center">
+            <p class="h2 fw-bold">
+              Simple, Fast Setup
+            </p>
+            <p class="text-muted">
+              Now take your institute courses online with Fedena Learn
+            </p>
+          </div>
+        </div>
+        <!-----------making circle integrations============================================-->
+        <div class="container mt-5">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-3 col-md-6">
+              <!-----1st=============================-->
+              <div class="dotted-border">
+                <div class="bg-danger" style="padding: 20px 40px; clip-path: circle(); height: 150px;">
+                  <p class="text-white fw-bold text-center mt-4">
+                    Integrate Uzity
+                    <br>
+                     with Fedena 
+                     <br>
+                     Platform
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!---------------2nd=======================================-->
+            <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+              <div class="dotted-border">
+                <div class="bg-danger" style="padding: 20px 40px; clip-path: circle(); height: 150px;">
+                  <p class="text-white fw-bold text-center mt-4">
+                   Data Sync
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!----3rd-==============================================-->
+            <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+              <div class="dotted-border">
+                <div class="bg-danger" style="padding: 20px 40px; clip-path: circle(); height: 150px;">
+                  <p class="text-white fw-bold text-center mt-4">
+                    Start Creating 
+                    <br>
+                  Topics & Content
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!----4th-==============================================-->
+            <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+              <div class="dotted-border">
+                <div class="bg-danger" style="padding: 20px 40px; clip-path: circle(); height: 150px;">
+                  <p class="text-white fw-bold text-center mt-4">
+                    Access the
+                    <br>
+                    course in a click
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+   </main>
+   <!-- iframe area============================ -->
+   <main style="margin-top: 70px;">
+    <section>
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <!-- Quick Overview of Fedena Learn -->
+          <div class="col-lg-6 text-lg-start text-center">
+            <p class="fw-bold h1 mb-5">
+              Quick Overview of Fedena Learn
+            </p>
+            <p class="h5" style="line-height: 1.5;">
+              We provide comprehensive online learning solutions for K-12, 
+              higher-eds, and groups of institution space, which digitizes 
+              your institute’s teaching material and offers effective 
+              learning experiences to students. Teachers can create 
+              engaging online courses and record the lectures at their own leisure. 
+              Students get instantly notified, and they can access 
+              the course, and watch the recorded lectures at their own convenience.
+            </p>
+            <!--------get started-free============================================-->
+             <!-- btn-2====================== -->
+             <button type="button" class="border2 rounded-1 mt-lg-4 mt-2" style="padding: 10px 20px !important;">
+              <a href="#" class="text-decoration-none" style="font-size: 20px;">
+                Get Started Free
+              </a>
+            </button>
+          </div>
+          <!----------------ifram youtube==============================================-->
+          <div class="col-lg-6 mt-lg-0 mt-4">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DGLwimFBL8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="max-width:100%;"></iframe>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   </main>
+   <!----------------FAQ====================================================================-->
+   <main class="mt-5">
+    <section class="bg-light pt-5 pb-5">
+      <div class="container">
+        <div class="text-center">
+          <p class="h2 fw-bold">
+            FAQ on Online Learning Platform for Schools and Colleges
+          </p>
+        </div>
+        <!-- accordion -->
+        <div class="col mt-5">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  What is an Online Learning platform For Schools?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   </main>
+   <!-- main section your courses -->
+   <main>
+    <section class="bg-violet pt-5 pb-5">
+      <div class="container">
+        <div
+          class="d-flex justify-content-center align-items-center flex-column"
+          data-aos-delay="200"
+          data-aos="fade-up"
+        >
+          <strong class="h1 fw-bold text-white text-center">
+            Efficient and Effective School ERP Software
+          </strong>
+          <p class="h6 col-lg-6 text-white text-center mt-3">
+            Suitable for all types of institutes such as K12, Universities,
+            Higher-Ed, Training Institutes and more.
+          </p>
+          <br />
+          <div class="d-flex justify-content-evenly align-items-center">
+            <div class="btn-section ms-lg-3 ms-0 text-center">
+              <!-- btn-1====================== -->
+              <button
+                type="button"
+                class="border2 rounded-1 mt-lg-0 mt-2"
+                style="padding: 10px 20px"
+              >
+                <a href="#" class="text-decoration-none h5"> Book A Demo </a>
+              </button>
+              <!-- btn-2====================== -->
+              <button
+                type="button"
+                class="border2 rounded-1 mt-lg-0 mt-2 ms-lg-3 ms-0"
+                style="
+                  padding: 10px 13px;
+                  background-color: transparent;
+                  border: 1px solid #cc3122;
+                "
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none h5 text-danger fw-bold FAQ"
+                >
+                  Frequently Asked Questions
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- main section for footer -->
+  <footer>
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <!----------logo====================================-->
+        <div class="col-lg-1 col-md-1 mb-lg-5 pb-lg-5">
+          <a href="#" class="logo">
+            <img src="./Assets/Images/logo.webp" alt="" style="width: 75px" />
+          </a>
+        </div>
+        <!----------------------product=========================================-->
+        <div class="col-lg-3 col-md-6 mt-5">
+          <ul class="list-unstyled">
+            <li>
+              <p class="text-muted h6 fw-bold">Product</p>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg"
+                >Features Tour</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg"
+                >Fedena Learn</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg"
+                >Features Tour</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg"
+                >Mobile App</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg"
+                >Multi School</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg"
+                >Student Information System</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg"
+                >Integration</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg"
+                >Partner Program</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!----------------------Why Fedena=========================================-->
+        <div class="col-lg-3 col-md-6 mb-lg-4 mb-0">
+          <ul class="list-unstyled">
+            <li>
+              <p class="text-muted h6 fw-bold">Why Fedena?</p>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg"
+                >101 Reasons</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg"
+                >Fedena Differences</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg"
+                >Custom ERP</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg"
+                >Why School Management Software</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg"
+                >Multi School</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg"
+                >Our Customers</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!----------------------Help=========================================-->
+        <div class="col-lg-2 col-md-6 mb-lg-5 mb-0">
+          <ul class="list-unstyled">
+            <li>
+              <p class="text-muted h6 fw-bold">Help</p>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg fs-6"
+                >Contact us</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg fs-6"
+                >Support</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg fs-6"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg fs-6"
+                >FAQ</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark lh-lg fs-6"
+                >API Playground</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-----Foradian-technologies==============================================-->
+        <div class="col-lg-3 col-md-6 mt-lg-5 mt-0">
+          <p class="text-muted">
+            Foradian Technologies, #2569/665, J K Landmark, 27th Main Rd,
+            Sector 1, HSR Layout, Bengaluru, Karnataka - 560102.
+          </p>
+          <ul class="list-unstyled">
+            <li class="text-dark fw-bold lh-lg">
+              Contact us @
+              <br />
+              <a href="#" class="text-decoration-none text-dark fw-bold">
+                +91- 8047 0918 07
+              </a>
+            </li>
+            <li class="text-dark fw-bold lh-lg">
+              Download App
+              <br />
+              <a href="#">
+                <img
+                  src="./Assets/Images/apple-app-store-logo.jpg"
+                  alt=""
+                  style="width: 120px"
+                />
+              </a>
+              <br />
+              <a href="#">
+                <img
+                  src="./Assets/Images/download.png"
+                  alt=""
+                  style="width: 130px"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-------------copyright section===========================================================-->
+      <div class="row justify-content-between align-items-center mt-5">
+        <div class="col-lg-6 col-md-12">
+          <p class="text-muted text-lg-start text-center">
+            &#169; 2023 Foradian Technologies. All Rights Reserved.
+            <a href="#" class="text-dark text-decoration-none"> Terms </a>
+            &
+            <a href="#" class="text-dark text-decoration-none"> Privacy </a>
+          </p>
+        </div>
+        <!-------------social contact=====================================================-->
+        <div class="col-lg-6 col-md-12">
+          <ul class="list-unstyled d-flex justify-content-center">
+            <li style="margin-right: 20px">
+              <a href="#" class="text-decoration-none text-dark">
+                <img
+                  src="./Assets/Images/facebook (1).png"
+                  alt=""
+                  style="width: 30px"
+                />
+              </a>
+            </li>
+            <li style="margin-right: 20px">
+              <a href="#" class="text-decoration-none text-dark">
+                <img
+                  src="./Assets/Images/twitter-sign.png"
+                  alt=""
+                  style="width: 30px"
+                />
+              </a>
+            </li>
+            <li style="margin-right: 20px">
+              <a href="#" class="text-decoration-none text-dark">
+                <img
+                  src="./Assets/Images/linkedin.png"
+                  alt=""
+                  style="width: 30px"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-dark">
+                <img
+                  src="./Assets/Images/youtube-logo.png"
+                  alt=""
+                  style="width: 30px"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- js files cdn====================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Javascript/animation javascript/jquery.min.js"></script>
+    <script src="./Javascript/animation javascript/owl.carousel.min.js"></script>
+    <script src="./Javascript/My.js"></script>
+  </body>
+</html>

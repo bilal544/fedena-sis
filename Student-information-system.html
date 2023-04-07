@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title=========================================== -->
+    <title>School Management Software</title>
+    <link rel="icon" href="./Assets/Images/facebook.png" type="image/x-icon" />
+    <!-- Bootstrap css files ============================================-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- bootstrap icons + fontawesome + google icons======================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script src="https://kit.fontawesome.com/c7dabd0806.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <!----------------owl-carousel-files==========================================-->
+    <link rel="stylesheet" href="./Assets/animation css/animate.css" />
+    <link rel="stylesheet" href="./Assets/animation css/owl.carousel.css" />
+    <link rel="stylesheet" href="./Assets/animation css/owl.theme.green.css" />
+    <!-- Own styling linking===================================== -->
+    <link rel="stylesheet" href="./Assets/Css/style.css" />
+    <!----------own scrolll animation css cdn========================================-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!--------on scroll javascript animation cdn============================-->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body onload="myfunction()">
+   <!-----------------(HEADER)=======================-->
+   <header>
+    <!-- (NAVBAR)======================================-->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top bg-white">
+        <div class="container-fluid px-4">
+          <a class="navbar-brand " href="Index.html">
+            <img
+              src="./Assets/Images/logo.webp"
+              alt=""
+              style="resize: none; width: 78px"
+            />
+          </a>
+          <button
+            class="navbar-toggler "
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Product
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Feature-Tour.html" target="_blank">Feature Tour</a></li>
+                  <li><a class="dropdown-item" href="Fedena-Learn.html">Fedena Learn</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Mibile App</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Multi School</a></li>
+                  <li><a class="dropdown-item" href="Student-information-system.html">Student Information System</a></li>
+                  <li><a class="dropdown-item" href="#">Custom ERP</a></li>
+                  <li><a class="dropdown-item" href="#">Integration</a></li>
+                  <li><a class="dropdown-item" href="#">101 Reasons</a></li>
+                  <li><a class="dropdown-item" href="#">Fedena Difference</a></li>
+                  <li><a class="dropdown-item" href="#">FAQ</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Partner
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Why Partner?</a></li>
+                  <li><a class="dropdown-item" href="#"> OEM Partner </a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Resources
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Case Studies</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Ebook </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Our Story</a></li>
+                  <li><a class="dropdown-item" href="#">Core Team</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Our Customers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Media and Press</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Awards and Recognitions</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Company Careers</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <!-- btn section===========-->
+              <div class="btn-section ms-lg-3 ms-0">
+                <button type="button" class="bg-white border1 rounded-1">
+                  <a href="#" class="text-decoration-none"> Try For Free </a>
+                </button>
+                <!-- btn-2====================== -->
+                <button type="button" class="border2 rounded-1 mt-lg-0 mt-2">
+                  <a href="#" class="text-decoration-none">
+                    Request Live Demo
+                  </a>
+                </button>
+              </div>
+              <!----=========================phone icon=====================================-->
+              <div
+                class="phone-icon ms-2 d-lg-block d-none"
+              >
+                <a href="#" class="text-dark">
+                  <img src="./Assets/Images/call-icon.png" alt="" style="height: 40px;" title="+91-8047-0918-07">
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--------------------(BANNER AREA)======================================-->
+        <main>
+            <section class="banner-img">
+                <div class="container">
+                  <div class="d-flex justify-content-center align-items-center flex-column">
+                    <div class="col pt-5 text-center ">
+                      <!-- (Online Student Information System)=========================-->
+                      <p class="fw-bolder display-2 text-white">
+                        Online Student Information System
+                      </p>
+                      <!--------------(PARA)===================================-->
+                      <p class="text-white h4">
+                        One-stop solution to systematically manage, store, 
+                        and track all sorts of students related data at a single place. 
+                      </p>
+                      <br>
+                      <!------------(BUTTON(1- TRY-IT-FOR-FREE) (2- LIVE DEMO))========================================-->
+                      <form action="#">
+                        <!---------(BTN-1 )==========================================-->
+                        <button class="border-0 try-it-for-free rounded">
+                          <a href="#" class="text-decoration-none text-white fw-bolder h5">
+                            Try it For Free
+                          </a>
+                        </button>
+                        <!---------(BTN-2 )==========================================-->
+                        <button class="ms-3 live-demo rounded">
+                          <a href="#" class="text-decoration-none fw-bolder h5">
+                            Live Demo
+                          </a>
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </section>
+         </main>
+   </header>
+        <!----------back to top button===================================================-->
+        <button
+        type="button"
+        class="btn btn-floating btn-sm"
+        id="btn-back-to-top" title="Back to Top" onclick="topFunction()">
+        <i class="fas fa-angle-up text-white"></i>
+      </button>
+      <!------------------phone icon on scroll btn====================================================-->
+      <button type="button"
+      class="btn btn-floating btn-sm border"
+      id="phone-icon" title="+91-8047-0918-07">
+      <i class="fas fa-phone text-white"></i>
+      </button>
+        <!------------------email icon on scroll btn =============================================-->
+      <button type="button"
+      class="btn btn-floating btn-primary btn-sm border"
+      id="email-icon" title="Email Us">
+      <i class="bi bi-envelope-open text-white"></i>
+      </button>
+   <!--------------------(MAIN SECTION-2 (WHAT IS THE STUDENT INFORMATION SYSTEM(SIS) ))==========================-->
+   <main class="my-5">
+    <section>
+      <div class="container px-4 px-lg-0 px-md-0">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <!-----( MAIN SECTION 2-(TITTLE)====)============================================-->
+            <div class="tittle mb-3 text-lg-start text-center">
+              <b class="fw-bolder h4">
+                What is the Student Information System (SIS)? 
+              </b>
+            </div>
+            <!-----( MAIN SECTION 2-(TITTLE-DESCRIPTION) (DISPLAY IMG-ON SMALL SCREEN)====)============================================-->
+            <figure class="d-lg-none d-block text-center">
+              <img src="./Assets/Images/sis(main-section-2).png" alt="" class="img-fluid">
+            </figure>
+            <!-----( MAIN SECTION 2-(TITTLE-DESCRIPTION) (DISPLAY TEXT-ON LG SCREEN)====)============================================-->
+            <div class="tittle-body d-lg-block d-none">
+              <p class="text-muted">
+                Manually managing student’s data sometimes become a tiresome and a 
+                vexing task for the educators and administrators. But, with the 
+                evolving technology in the education industry, all operations can 
+                be easily streamlined, which eventually improve student’s productivity, efficiency & results. 
+                <br> <br>
+                With the Student Information System, institutes can manage an enormous 
+                amount of students’ data at a single place and it enhances the data 
+                security in the most cost-effective way. Features such as admission numbers, 
+                attendance records, exam performance tracking, guardian details, 
+                assignment management, and much more can be seamlessly managed by administrators. 
+                <br> <br>
+                Student Information Management System not only reduces the workload of staff 
+                members but also ensures that institutes have full control over their data.
+                Also, assist faculties in monitoring the performance of the student's 
+                schooling and make data-driven decisions to improve their academic growth. 
+              </p>
+            </div>
+          </div>
+          <!-- (MAIN SECTION-2 (RIGHT-ALIGNMENT-IMAGE))=============================================-->
+          <div class="col-lg-5">
+            <figure class="d-lg-block d-none">
+              <img src="./Assets/Images/sis(main-section-2).png" alt="" class="img-fluid">
+            </figure>
+              <!-----( MAIN SECTION 2-(TITTLE-DESCRIPTION)(DISPLAY ON SMALL SCREEN)====)============================================-->
+              <div class="tittle-body d-lg-none d-block text-center">
+                <p class="text-muted">
+                  Manually managing student’s data sometimes become a tiresome and a 
+                  vexing task for the educators and administrators. But, with the 
+                  evolving technology in the education industry, all operations can 
+                  be easily streamlined, which eventually improve student’s productivity, efficiency & results. 
+                  <br> <br>
+                  With the Student Information System, institutes can manage an enormous 
+                  amount of students’ data at a single place and it enhances the data 
+                  security in the most cost-effective way. Features such as admission numbers, 
+                  attendance records, exam performance tracking, guardian details, 
+                  assignment management, and much more can be seamlessly managed by administrators. 
+                  <br> <br>
+                  Student Information Management System not only reduces the workload of staff 
+                  members but also ensures that institutes have full control over their data.
+                  Also, assist faculties in monitoring the performance of the student's 
+                  schooling and make data-driven decisions to improve their academic growth. 
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   </main>
+   <!--------------------(MAIN SECTION-3 (What are the benefits of the Student Management System? ))==========================-->
+   <main class="mt-5">
+    <section>
+      <div class="container-fluid">
+        <p class="text-center fw-bolder h2 px-4 px-lg-0">
+          What are the benefits of the Student Management System?
+        </p>
+        <!-- (CARDS)================================-->
+        <div class="row align-items-center mt-5 px-lg-4 px-2">
+           <!-- (CARD-1)================================-->
+          <div class="col-md-6 col-lg-3">
+            <div class="card mx-auto" style=" background-color: #172b4d;">
+              <div class="img-icon text-center pt-4">
+              <img src="./Assets/Images/image-removebg-preview(1).png" class="card-img-top" alt="..." style="width: 90px;">
+              <div class="image-tittle">
+                <p class="h4 fw-bolder text-white">
+                  For Teachers
+                </p>
+              </div>
+            </div>
+              <div class="card-body">
+               <ul class="text-white">
+                <li>
+                  <p>
+                    Easy communication with students and parents.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Data-driven reports on student’s progress.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    A unified place to maintain the student’s grades.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Easily manage a student’s records.
+                  </p>
+                </li>
+               </ul>
+              </div>
+            </div>
+          </div>
+           <!-- (CARD-2)================================-->
+           <div class="col-md-6 col-lg-3 mt-lg-0 mt-3">
+            <div class="card mx-auto" style=" background-color: #172b4d;">
+              <div class="img-icon text-center pt-4">
+              <img src="./Assets/Images/image-removebg-preview(2).png" class="card-img-top" alt="..." style="width: 90px;">
+              <div class="image-tittle">
+                <p class="h4 fw-bolder text-white">
+                  For Admins
+                </p>
+              </div>
+            </div>
+              <div class="card-body">
+               <ul class="text-white">
+                <li>
+                  <p>
+                    Easy communication with students and parents.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Data-driven reports on student’s progress.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    A unified place to maintain the student’s grades.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Easily manage a student’s records.
+                  </p>
+                </li>
+               </ul>
+              </div>
+            </div>
+          </div>
+          <!-- (CARD-3)================================-->
+          <div class="col-md-6 col-lg-3 mt-lg-0 mt-3">
+            <div class="card mx-auto" style=" background-color: #172b4d;">
+              <div class="img-icon text-center pt-4">
+              <img src="./Assets/Images/imaage-remove-bg(3).png" class="card-img-top" alt="..." style="width: 90px;">
+              <div class="image-tittle">
+                <p class="h4 fw-bolder text-white">
+                  For Students
+                </p>
+              </div>
+            </div>
+              <div class="card-body">
+               <ul class="text-white">
+                <li>
+                  <p>
+                    Easy communication with students and parents.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Data-driven reports on student’s progress.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    A unified place to maintain the student’s grades.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Easily manage a student’s records.
+                  </p>
+                </li>
+               </ul>
+              </div>
+            </div>
+          </div>
+          <!-- (CARD-4)================================-->
+          <div class="col-md-6 col-lg-3 mt-lg-0 mt-3">
+            <div class="card mx-auto" style=" background-color: #172b4d;">
+              <div class="img-icon text-center pt-4">
+              <img src="./Assets/Images/image-remove-bg-(4).png" class="card-img-top" alt="..." style="width: 90px;">
+              <div class="image-tittle">
+                <p class="h4 fw-bolder text-white">
+                  For Parents
+                </p>
+              </div>
+            </div>
+              <div class="card-body">
+               <ul class="text-white">
+                <li>
+                  <p>
+                    Easy communication with students and parents.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Data-driven reports on student’s progress.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    A unified place to maintain the student’s grades.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Easily manage a student’s records.
+                  </p>
+                </li>
+               </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   </main>
+    <!--------------------(MAIN SECTION-4 (DID YOU KNOW) )==========================-->
+    <main class="my-5">
+      <section class="bg-blue">
+        <div class="container">
+          <div class="row justfiy-content-center align-items-center">
+            <div class="col-lg-7">
+              <div class="bg-arrow-banner mx-lg-0 mx-3">
+                <p class="px-4 pt-2 text-white h5 fw-bolder">
+                  DID YOU KNOW?
+                </p>
+              </div>
+              <!--------------------para for did you know==============================-->
+              <div class="body-for-did-you-know px-3 px-lg-0">
+                <p>
+                  Fedena is the leading EdTech provider for K-12 and Higher Ed, serving more than
+                  <br> <br>
+                  <strong class="fw-bolder">
+                    40,000+ Institutes, 20+ million students and teachers in 200+ countries around the world. 
+                  </strong>
+                </p>
+              </div>
+            </div>
+            <!-- (RIGHT ALIGNMENT IMAGE FOR MAIN SECTION 4)===================================-->
+            <div class="col-lg-5 pt-lg-0 pt-3">
+              <figure class="text-center px-lg-0 px-3"><img src="./Assets/Images/Map.png" alt="" class="img-fluid" style="filter: invert(15%); height: 200px;"></figure>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--------------------(MAIN SECTION-5 (Student Information Management System Features) )==========================-->
+    <main class="my-5">
+      <section>
+        <div class="container-fluid px-lg-5 px-5">
+          <!-----( MAIN SECTION 5-(TITTLE)====)============================================-->
+          <div class="tittle text-center">
+            <b class="fw-bolder h3">
+              Student Information Management System Features
+            </b>
+          </div>
+         <!-- ==========--------------(CARDS-ROW-1================)===========-------------- -->
+         <div class="row justfiy-content-center align-items-center">
+          <!-- (CARDS -1)============================-->
+          <div class="col-lg-4 col-md-4">
+            <div class="d-flex align-items-center mt-5">
+              <!-- (ICON==========================)-->
+              <figure><img src="./Assets/Images/img-1.png" alt="" width="60px"></figure>
+              <!------------(TITTLE)======================================-->
+              <p class="text-dark fw-bolder h5 px-3">
+                Student Data Management
+              </p>
+            </div>
+            <!--------------(PARAGRAPH)============================-->
+            <p class="text-muted">
+              Manage all type of data, such as students personal details, 
+              academic progress, documents, attendance details more. 
+              Admin can easily export the data anytime and make a data-driven decision. 
+            </p>
+            <a href="#" class="text-decoration-none text-danger fw-bolder">
+              Learn More >
+            </a>
+          </div>
+          <!-- (CARDS -2)============================-->
+          <div class="col-lg-4 col-md-4">
+            <div class="d-flex align-items-center mt-5">
+              <!-- (ICON==========================)-->
+              <figure><img src="./Assets/Images/img-2.png" alt="" width="60px"></figure>
+              <!------------(TITTLE)======================================-->
+              <p class="text-dark fw-bolder h5 px-3">
+                Report Generation
+              </p>
+            </div>
+            <!--------------(PARAGRAPH)============================-->
+            <p class="text-muted">
+              Generate various comprehensive reports - attendance report, fees pending report,
+               placement report, examination result report, and more. 
+               Also, customize and modify the field according to the institute preference. 
+            </p>
+            <a href="#" class="text-decoration-none text-danger fw-bolder">
+              Learn More >
+            </a>
+          </div>
+          <!-- (CARDS -3)============================-->
+          <div class="col-lg-4 col-md-4 mx-auto">
+            <div class="d-flex align-items-center mt-5">
+              <!-- (ICON==========================)-->
+              <figure><img src="./Assets/Images/img-3.png" alt="" width="60px"></figure>
+              <!------------(TITTLE)======================================-->
+              <p class="text-dark fw-bolder h5 px-3">
+                Admission Management
+              </p>
+            </div>
+            <!--------------(PARAGRAPH)============================-->
+            <p class="text-muted">
+              Generate various comprehensive reports - attendance report, fees pending report,
+               placement report, examination result report, and more. 
+               Also, customize and modify the field according to the institute preference. 
+            </p>
+            <a href="#" class="text-decoration-none text-danger fw-bolder">
+              Learn More >
+            </a>
+          </div>
+         </div>
+         <!-- ==========--------------(CARDS-ROW-2================)===========-------------- -->
+         <div class="row justfiy-content-center align-items-center mt-4">
+          <!-- (CARDS -1)============================-->
+          <div class="col-lg-4 col-md-4">
+            <div class="d-flex align-items-center mt-5">
+              <!-- (ICON==========================)-->
+              <figure><img src="./Assets/Images/img-4.png" alt="" width="60px"></figure>
+              <!------------(TITTLE)======================================-->
+              <p class="text-dark fw-bolder h5 px-3">
+                Student Data Management
+              </p>
+            </div>
+            <!--------------(PARAGRAPH)============================-->
+            <p class="text-muted">
+              Manage all type of data, such as students personal details, 
+              academic progress, documents, attendance details more. 
+              Admin can easily export the data anytime and make a data-driven decision. 
+            </p>
+            <a href="#" class="text-decoration-none text-danger fw-bolder">
+              Learn More >
+            </a>
+          </div>
+          <!-- (CARDS -2)============================-->
+          <div class="col-lg-4 col-md-4">
+            <div class="d-flex align-items-center mt-5">
+              <!-- (ICON==========================)-->
+              <figure><img src="./Assets/Images/img-5.png" alt="" width="60px"></figure>
+              <!------------(TITTLE)======================================-->
+              <p class="text-dark fw-bolder h5 px-3">
+                Report Generation
+              </p>
+            </div>
+            <!--------------(PARAGRAPH)============================-->
+            <p class="text-muted">
+              Generate various comprehensive reports - attendance report, fees pending report,
+               placement report, examination result report, and more. 
+               Also, customize and modify the field according to the institute preference. 
+            </p>
+            <a href="#" class="text-decoration-none text-danger fw-bolder">
+              Learn More >
+            </a>
+          </div>
+          <!-- (CARDS -3)============================-->
+          <div class="col-lg-4 col-md-4">
+            <div class="d-flex align-items-center mt-5">
+              <!-- (ICON==========================)-->
+              <figure><img src="./Assets/Images/img-6.png" alt="" width="60px"></figure>
+              <!------------(TITTLE)======================================-->
+              <p class="text-dark fw-bolder h5 px-3">
+                Admission Management
+              </p>
+            </div>
+            <!--------------(PARAGRAPH)============================-->
+            <p class="text-muted">
+              Generate various comprehensive reports - attendance report, fees pending report,
+               placement report, examination result report, and more. 
+               Also, customize and modify the field according to the institute preference. 
+            </p>
+            <a href="#" class="text-decoration-none text-danger fw-bolder">
+              Learn More >
+            </a>
+          </div>
+         </div>
+         <!-- ==========--------------(CARDS-ROW-3================)===========-------------- -->
+         <div class="row justfiy-content-center align-items-center mt-4">
+          <!-- (CARDS -1)============================-->
+          <div class="col-lg-4 col-md-4">
+            <div class="d-flex align-items-center mt-5">
+              <!-- (ICON==========================)-->
+              <figure><img src="./Assets/Images/img-9.png" alt="" width="60px"></figure>
+              <!------------(TITTLE)======================================-->
+              <p class="text-dark fw-bolder h5 px-3">
+                Student Data Management
+              </p>
+            </div>
+            <!--------------(PARAGRAPH)============================-->
+            <p class="text-muted">
+              Manage all type of data, such as students personal details, 
+              academic progress, documents, attendance details more. 
+              Admin can easily export the data anytime and make a data-driven decision. 
+            </p>
+            <a href="#" class="text-decoration-none text-danger fw-bolder">
+              Learn More >
+            </a>
+          </div>
+          <!-- (CARDS -2)============================-->
+          <div class="col-lg-4 col-md-4">
+            <div class="d-flex align-items-center mt-5">
+              <!-- (ICON==========================)-->
+              <figure><img src="./Assets/Images/img-11.png" alt="" width="60px"></figure>
+              <!------------(TITTLE)======================================-->
+              <p class="text-dark fw-bolder h5 px-3">
+                Report Generation
+              </p>
+            </div>
+            <!--------------(PARAGRAPH)============================-->
+            <p class="text-muted">
+              Generate various comprehensive reports - attendance report, fees pending report,
+               placement report, examination result report, and more. 
+               Also, customize and modify the field according to the institute preference. 
+            </p>
+            <a href="#" class="text-decoration-none text-danger fw-bolder">
+              Learn More >
+            </a>
+          </div>
+          <!-- (CARDS -3)============================-->
+          <div class="col-lg-4 col-md-4">
+            <div class="d-flex align-items-center mt-5">
+              <!-- (ICON==========================)-->
+              <figure><img src="./Assets/Images/img-12.png" alt="" width="60px"></figure>
+              <!------------(TITTLE)======================================-->
+              <p class="text-dark fw-bolder h5 px-3">
+                Admission Management
+              </p>
+            </div>
+            <!--------------(PARAGRAPH)============================-->
+            <p class="text-muted">
+              Generate various comprehensive reports - attendance report, fees pending report,
+               placement report, examination result report, and more. 
+               Also, customize and modify the field according to the institute preference. 
+            </p>
+            <a href="#" class="text-decoration-none text-danger fw-bolder">
+              Learn More >
+            </a>
+          </div>
+         </div>
+        </div>
+      </section>
+    </main>
+     <!--------------------(MAIN SECTION-6 (Why Fedena Student Information Management System? ) )==========================-->
+     <main class="my-5">
+      <section style="background: #172b4d center no-repeat fixed; background-size: cover; padding: 20px 0px;">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 text-lg-start text-center px-lg-5 px-3">
+              <!-------------------(TITTLE============================================================)-->
+              <p class="fw-bolder h1 text-white mb-4">
+                Why Fedena Student Information Management System?
+              </p>
+              <figure class="d-lg-none d-block">
+                <img src="./Assets/Images/fedena-sis-6.png" alt="#" class="img-fluid">
+              </figure>
+              <p class="text-white d-lg-block d-none">
+                Fedena is a complete Institute Management System, that helps schools & 
+                colleges efficiently manage their daily academic & administrative activities. 
+                By bringing the SIS & ERP feature under the same brand our goal is to make 
+                it easier for you to understand how various features under one roof work together 
+                in achieving better institute growth & meet demands of the administration as 
+                well as the students and their parents. Check the illustration, 
+                to understand what factors to considered when institution 
+                are looking for perfect student management system. 
+              </p>
+            </div>
+            <!-- (RIGHT ALIGNMENT IMAGE FOR MAIN SECTION 6)========================================-->
+            <div class="col-lg-6 col-md-6 text-center">
+              <figure class="d-lg-block d-none"><img src="./Assets/Images/fedena-sis-6.png" alt="#" class="img-fluid"></figure>
+              <p class="text-white d-lg-none d-block px-4" style="text-align: justify;">
+                Fedena is a complete Institute Management System, that helps schools & 
+                colleges efficiently manage their daily academic & administrative activities. 
+                By bringing the SIS & ERP feature under the same brand our goal is to make 
+                it easier for you to understand how various features under one roof work together 
+                in achieving better institute growth & meet demands of the administration as 
+                well as the students and their parents. Check the illustration, 
+                to understand what factors to considered when institution 
+                are looking for perfect student management system. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+     </main>
+     <!--------------------(MAIN SECTION-7 (Various Integration Option to Enhance School Management Experience ) )==========================-->
+     <main>
+      <section class="dotted-layer">
+         <div class="container-fluid mt-5 px-4">
+          <div class="text-lg-center text-start" data-aos-delay="200" data-aos="zoom-in">
+            <b class="h3 fw-bold">
+              Various Integration Option to Enhance School Management Experience
+            </b>
+            <p class="h6 mt-3">
+              Fedena has every feature your 
+              institution will ever need
+              and offers upto 20 integrations 
+              that enhance the capability and 
+              functionality of the student management platform.
+            </p>
+          </div>
+         </div>
+         <!------------------biometric section==========================-->
+         <div class="container-fluid">
+          <div class="row justify-content-between align-items-center px-4">
+         <div class="col-lg-3 col-6 mt-5" >
+          <div class="d-flex justify-content-center align-items-center" >
+              <figure>
+                <img src="./Assets/Images/biometrics.png" alt="" style="height: 35px;">
+              </figure>
+              <span class="h6 ms-3 fw-bold">
+                Biometric
+              </span>
+            </div>
+          </div>
+          <!--------2nd location==================================================-->
+          <div class="col-lg-3 col-6 mt-5">
+            <div class="d-flex justify-content-center align-items-center">
+                <figure>
+                  <img src="./Assets/Images/placeholder.png" alt="" style="height: 35px;">
+                </figure>
+                <span class="h6 ms-3 fw-bold">
+                  Location
+                </span>
+              </div>
+            </div>
+            <!--------3rd paymentGateway==================================================-->
+          <div class="col-lg-3 col-6 mt-5">
+            <div class="d-flex justify-content-center align-items-center">
+                <figure>
+                  <img src="./Assets/Images/payment-gateway.png" alt="" style="height: 35px;">
+                </figure>
+                <span class="h6 ms-3 fw-bold">
+                  Payment Gateway
+                </span>
+              </div>
+            </div>
+            <!--------4th onlineClasses==================================================-->
+          <div class="col-lg-3 col-6 mt-5">
+            <div class="d-flex justify-content-center align-items-center">
+                <figure>
+                  <img src="./Assets/Images/online-classes.png" alt="" style="height: 35px;">
+                </figure>
+                <span class="h6 ms-3 fw-bold">
+                 Online Classes
+                </span>
+              </div>
+            </div>
+            </div>
+         </div>
+      </section>
+    </main>
+    <!-- main-section 8th for get started for free tody with display flex -->
+    <main class="my-5">
+      <section class="bg-violet pt-5 pb-5">
+        <div class="container">
+          <div class="d-flex justify-content-center align-items-center flex-column px-3 px-lg-0">
+            <strong class="h1 fw-bold text-white">
+              Ready to get started
+            </strong>
+            <p class="h6 col-lg-6 text-white text-center mt-3">
+              Join millions of users who have shared that Fedena provides 99% of Customer Support Satisfaction.
+            </p>
+            <br>
+            <div class="d-flex justify-content-evenly align-items-center">
+              <div class="btn-section ms-lg-3 ms-0 text-center">
+                <!-- btn-1====================== -->
+                <button type="button" class="border2 rounded-1 mt-lg-0 mt-2" style="padding: 10px 20px;">
+                  <a href="#" class="text-decoration-none h5">
+                    Book A Demo
+                  </a>
+                </button>
+                 <!-- btn-2====================== -->
+                 <button type="button" class="border2 rounded-1 mt-lg-0 mt-2" style="padding: 10px 13px; background-color: transparent; border:1px solid #cc3122;">
+                  <a href="#" class="text-decoration-none h5 text-danger fw-bold">
+                    Get Started Free
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     </main>
+      <!-- main-section 9th for footer-->
+      <footer>
+        <div class="container-fluid px-lg-5 px-3">
+          <div class="row justify-content-between">
+            <!----------logo====================================-->
+            <div class="col-lg-1 col-md-1">
+              <a href="#" class="logo">
+                <img src="./Assets/Images/logo.webp" alt="" style="width: 60px;">
+              </a>
+            </div>
+            <!----------------------product=========================================-->
+            <div class="col-lg-3 col-md-3 mt-lg-0 mt-3">
+              <ul class="list-unstyled">
+                <li>
+                  <p class="text-muted h6 fw-bold">
+                   Product
+                  </p>
+                </li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg">Features Tour</a></li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg">Fedena Learn</a></li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg">Features Tour</a></li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg">Mobile App</a></li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg">Multi School</a></li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg">Student Information System</a></li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg">Integration</a></li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg">Partner Program</a></li>
+                
+              </ul>
+            </div>
+            <!----------------------Why Fedena=========================================-->
+            <div class="col-lg-3 col-md-3 mt-lg-0 mt-3">
+              <ul class="list-unstyled">
+                <li>
+                  <p class="text-muted h6 fw-bold">
+                   Why Fedena?
+                  </p>
+                </li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg">101 Reasons</a></li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg">Fedena Differences</a></li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg">Custom ERP</a></li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg">Why School Management Software</a></li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg">Multi School</a></li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg">Our Customers</a></li>
+              </ul>
+            </div>
+            <!----------------------Help=========================================-->
+            <div class="col-lg-2 col-md-2 mt-lg-0 mt-3">
+              <ul class="list-unstyled">
+                <li>
+                  <p class="text-muted h6 fw-bold">
+                   Help
+                  </p>
+                </li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg fs-6">Contact us</a></li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg fs-6">Support</a></li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg fs-6">Services</a></li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg fs-6">FAQ</a></li>
+                <li><a href="#" class="text-decoration-none text-dark lh-lg fs-6">API Playground</a></li>
+              </ul>
+            </div>
+            <!-----Foradian-technologies==============================================-->
+            <div class="col-lg-3 col-md-3 mt-lg-0 mt-3">
+              <p class="text-muted ">
+                Foradian Technologies,
+                #2569/665, J K Landmark,
+                27th Main Rd, Sector 1,
+                HSR Layout, Bengaluru,
+                Karnataka - 560102.
+              </p>
+              <ul class="list-unstyled mt-lg-0 mt-3">
+                <li class="text-dark fw-bold lh-lg">Contact us @
+                  <br>
+                  <a href="#" class="text-decoration-none text-dark fw-bold">
+                    +91- 8047 0918 07
+                  </a>
+                </li>
+                <li class="text-dark fw-bold lh-lg">
+                   Download App
+                   <br>
+                  <a href="#">
+                   <img src="./Assets/Images/apple-app-store-logo.jpg" alt="" style="width: 120px;">
+                  </a>
+                  <br>
+                  <a href="#">
+                    <img src="./Assets/Images/download.png" alt="" style="width: 130px;">
+                   </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-------------copyright section===========================================================-->
+          <div class="row justify-content-between align-items-center mt-4">
+          <div class="col-lg-6 col-md-12">
+          <p class="text-muted text-lg-start text-center">
+            &#169;
+            2023 Foradian Technologies. All Rights Reserved.
+            <a href="#" class="text-dark text-decoration-none">
+              Terms
+            </a>
+            &
+            <a href="#" class="text-dark text-decoration-none">
+            Privacy
+            </a>
+          </p>
+        </div>
+        <!-------------social contact=====================================================-->
+        <div class="col-lg-6 col-md-12">
+           <ul class="list-unstyled d-flex justify-content-center ">
+            <li style="margin-right: 20px;"><a href="#" class="text-decoration-none text-dark">
+              <img src="./Assets/Images/facebook (1).png" alt="" style="width: 30px;">
+            </a></li>
+            <li style="margin-right: 20px;"><a href="#" class="text-decoration-none text-dark">
+              <img src="./Assets/Images/twitter-sign.png" alt="" style="width: 30px;">
+            </a></li>
+            <li style="margin-right: 20px;"><a href="#" class="text-decoration-none text-dark">
+              <img src="./Assets/Images/linkedin.png" alt="" style="width: 30px;">
+            </a></li>
+            <li><a href="#" class="text-decoration-none text-dark">
+              <img src="./Assets/Images/youtube-logo.png" alt="" style="width: 30px;">
+            </a></li>
+           </ul>
+        </div>
+      </div>
+        </div>
+       </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- js files cdn====================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Javascript/animation javascript/jquery.min.js"></script>
+    <script src="./Javascript/animation javascript/owl.carousel.min.js"></script>
+    <script src="./Javascript/My.js"></script>
+  </body>
+  </html>
